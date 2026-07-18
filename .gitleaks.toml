@@ -1,0 +1,16 @@
+# gitleaks configuration — secret scanning.
+# Extends the default gitleaks rule set.
+title = "govbr-ui-demo gitleaks config"
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Paths ignored during secret scanning"
+paths = [
+  '''(^|/)node_modules/''',
+  '''(^|/)\.next/''',
+  '''(^|/)coverage/''',
+  '''package-lock\.json$''',
+  '''.*\.sbom\.json$''',
+]

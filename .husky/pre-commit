@@ -1,0 +1,9 @@
+npm run lint
+npm run typecheck
+
+# Secret scanning with gitleaks (only if installed).
+if command -v gitleaks >/dev/null 2>&1; then
+  gitleaks protect --staged --redact --config .gitleaks.toml
+else
+  echo "gitleaks not found — skipping secret scan (install: https://github.com/gitleaks/gitleaks)"
+fi
