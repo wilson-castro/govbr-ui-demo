@@ -1,5 +1,7 @@
 # gov.br UI Demo
 
+🔗 **Demo ao vivo:** <https://wilson-castro.github.io/govbr-ui-demo/>
+
 Biblioteca de componentes React no padrão **shadcn** (Radix + Tailwind CSS v4)
 com o visual do **[Design System do gov.br](https://www.gov.br/ds/)**,
 complementada pelos **webcomponents oficiais**
